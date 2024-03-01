@@ -1,0 +1,71 @@
+ Network root_default  Creating
+ Network root_default  Created
+ Container root-db-1  Creating
+ Container root-db-1  Created
+ Container root-wordpress-1  Creating
+ Container root-wordpress-1  Created
+Attaching to db-1, wordpress-1
+db-1         | 2024-02-29 16:48:20+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.44-1.el7 started.
+wordpress-1  | WordPress not found in /var/www/html - copying now...
+db-1         | 2024-02-29 16:48:20+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+db-1         | 2024-02-29 16:48:20+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.44-1.el7 started.
+db-1         | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+db-1         | 2024-02-29T16:48:21.180778Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+db-1         | 2024-02-29T16:48:21.182937Z 0 [Note] mysqld (mysqld 5.7.44) starting as process 1 ...
+db-1         | 2024-02-29T16:48:21.189726Z 0 [Note] InnoDB: PUNCH HOLE support available
+db-1         | 2024-02-29T16:48:21.189958Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+db-1         | 2024-02-29T16:48:21.190340Z 0 [Note] InnoDB: Uses event mutexes
+db-1         | 2024-02-29T16:48:21.190571Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+db-1         | 2024-02-29T16:48:21.190765Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+db-1         | 2024-02-29T16:48:21.191105Z 0 [Note] InnoDB: Using Linux native AIO
+db-1         | 2024-02-29T16:48:21.193226Z 0 [Note] InnoDB: Number of pools: 1
+db-1         | 2024-02-29T16:48:21.200150Z 0 [Note] InnoDB: Using CPU crc32 instructions
+db-1         | 2024-02-29T16:48:21.203325Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+db-1         | 2024-02-29T16:48:21.216679Z 0 [Note] InnoDB: Completed initialization of buffer pool
+db-1         | 2024-02-29T16:48:21.222616Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+db-1         | 2024-02-29T16:48:21.252391Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+db-1         | 2024-02-29T16:48:21.327638Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+db-1         | 2024-02-29T16:48:21.328032Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+db-1         | 2024-02-29T16:48:21.374176Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+db-1         | 2024-02-29T16:48:21.376007Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+db-1         | 2024-02-29T16:48:21.376288Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+db-1         | 2024-02-29T16:48:21.376920Z 0 [Note] InnoDB: Waiting for purge to start
+db-1         | 2024-02-29T16:48:21.427285Z 0 [Note] InnoDB: 5.7.44 started; log sequence number 14538288
+db-1         | 2024-02-29T16:48:21.427969Z 0 [Note] Plugin 'FEDERATED' is disabled.
+db-1         | 2024-02-29T16:48:21.428370Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+db-1         | 2024-02-29T16:48:21.477477Z 0 [Note] InnoDB: Buffer pool(s) load completed at 240229 16:48:21
+db-1         | 2024-02-29T16:48:21.478975Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+db-1         | 2024-02-29T16:48:21.479300Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+db-1         | 2024-02-29T16:48:21.479494Z 0 [Warning] A deprecated TLS version TLSv1 is enabled. Please use TLSv1.2 or higher.
+db-1         | 2024-02-29T16:48:21.479755Z 0 [Warning] A deprecated TLS version TLSv1.1 is enabled. Please use TLSv1.2 or higher.
+db-1         | 2024-02-29T16:48:21.484498Z 0 [Warning] CA certificate ca.pem is self signed.
+db-1         | 2024-02-29T16:48:21.484764Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+db-1         | 2024-02-29T16:48:21.486182Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+db-1         | 2024-02-29T16:48:21.486412Z 0 [Note] IPv6 is available.
+db-1         | 2024-02-29T16:48:21.487121Z 0 [Note]   - '::' resolves to '::';
+db-1         | 2024-02-29T16:48:21.487327Z 0 [Note] Server socket created on IP: '::'.
+db-1         | 2024-02-29T16:48:21.490040Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+db-1         | 2024-02-29T16:48:21.666893Z 0 [Note] Event Scheduler: Loaded 0 events
+db-1         | 2024-02-29T16:48:21.667490Z 0 [Note] mysqld: ready for connections.
+db-1         | Version: '5.7.44'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+wordpress-1  | Complete! WordPress has been successfully copied to /var/www/html
+wordpress-1  | No 'wp-config.php' found in /var/www/html, but 'WORDPRESS_...' variables supplied; copying 'wp-config-docker.php' (WORDPRESS_DB_HOST WORDPRESS_DB_NAME WORDPRESS_DB_PASSWORD WORDPRESS_DB_USER)
+wordpress-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+wordpress-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+wordpress-1  | [Thu Feb 29 16:48:24.562956 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.57 (Debian) PHP/8.2.16 configured -- resuming normal operations
+wordpress-1  | [Thu Feb 29 16:48:24.563338 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:08 +0000] "\x16\x03\x01\x02" 400 484 "-" "-"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:08 +0000] "\x16\x03\x01\x02\x1a\x01" 400 484 "-" "-"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:09 +0000] "\x16\x03\x01\x02" 400 484 "-" "-"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:09 +0000] "\x16\x03\x01\x02" 400 484 "-" "-"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:09 +0000] "GET / HTTP/1.1" 200 15082 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:51:12 +0000] "GET / HTTP/1.1" 200 15082 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:52:05 +0000] "-" 408 0 "-" "-"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:52:16 +0000] "GET /favicon.ico HTTP/1.1" 302 407 "http://3.85.231.146:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+wordpress-1  | 152.58.232.85 - - [29/Feb/2024:16:53:08 +0000] "-" 408 0 "-" "-"
+Gracefully stopping... (press Ctrl+C again to force)
+ Container root-wordpress-1  Stopping
+ Container root-wordpress-1  Stopped
+ Container root-db-1  Stopping
+ Container root-db-1  Stopped
+canceled
