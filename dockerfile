@@ -30,5 +30,3 @@ ONBUILD RUN mkdir onbuild-folder
 ONBUILD RUN touch onbuild.txt
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
 ENTRYPOINT ["/bin/bash"]
-
-
