@@ -50,12 +50,13 @@ node {
     sh "docker rmi ubuntu amazonlinux fedora centos --force"
     sh "docker images"
     sh "docker ps -a"
-} 
+
     stage "11. build stage"
     echo "building the job under build stage"
 
     stage "12. testing stage"
-    echo "this is testing tage wether the project id testing using manual/automation testing "
-    stage "13. depolying stage"
-    echo "depolying the stage"
-}
+    echo "this is testing phase where project is testing using manual/automation testing"
+
+    stage "13. deploy phase"
+    echo "this is the deployment phase"
+} 
